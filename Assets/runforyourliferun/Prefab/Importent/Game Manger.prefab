@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1058514934442718937
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1058514934442718939}
+  - component: {fileID: 1058514934442718938}
+  m_Layer: 0
+  m_Name: Game Manger
+  m_TagString: Game Manger
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1058514934442718939
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058514934442718937}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1058514934442718938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058514934442718937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90177e51ab38a8141873c3f3a45b3681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Max_Hart: 2
+  harts: 2
+  Dead_Zombie: 0
+  Distens: 
+  _player_Speed: 0
+  Its_Mobile_Game: 0
+  Meters_Text: {fileID: 0}
+  Meters10_Text: {fileID: 0}
+  Meters100_Text: {fileID: 0}
+  Meters1K_Text: {fileID: 0}
+  Meters10K_Text: {fileID: 0}
+  Meters100K_Text: {fileID: 0}
+  Meters1M_Text: {fileID: 0}
+  Cama1_Text: {fileID: 0}
+  Cama2_Text: {fileID: 0}
+  Texts_Holder: {fileID: 0}
+  Heart_Blod: {fileID: 0}
+  Hart01: {fileID: 0}
+  Hart02: {fileID: 0}
+  Hart03: {fileID: 0}
+  Hart04: {fileID: 0}
+  Hart05: {fileID: 0}
+  Hart06: {fileID: 0}
+  Hart07: {fileID: 0}
+  Hart_Zero: {fileID: 21300000, guid: 2d4b7716453c7da4f82f70a557d89faf, type: 3}
+  Hart_Half: {fileID: 21300000, guid: 756f13168b0d4bc4296992fea4d77aaf, type: 3}
+  Hart_Full: {fileID: 21300000, guid: 812aba60700e89c4a852456d9e6f9d5b, type: 3}
+  Dead_Zombie_Text: {fileID: 0}
+  Player_Speed: 8

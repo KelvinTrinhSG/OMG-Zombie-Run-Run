@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &590748502368409195
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 590748502368409193}
+  - component: {fileID: 590748502368409194}
+  m_Layer: 0
+  m_Name: Audio Manger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &590748502368409193
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590748502368409195}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &590748502368409194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590748502368409195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56a7093c42e9cdd40bd7fec298f6df96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sawends:
+  - Clip: {fileID: 8300000, guid: a71b60554279cdd4d891e5a65da53726, type: 3}
+    Name: Pistol Reaille
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Sourc: {fileID: 0}
+  - Clip: {fileID: 8300000, guid: a71b60554279cdd4d891e5a65da53726, type: 3}
+    Name: Uzi Reaille
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Sourc: {fileID: 0}
+  - Clip: {fileID: 8300000, guid: b1714ab7a4e39cf47ab10f9646d24d02, type: 3}
+    Name: ShotGun Reaille
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Sourc: {fileID: 0}
+  - Clip: {fileID: 8300000, guid: d74b398f5b1fb6449a5d5774d96a350c, type: 3}
+    Name: MachintGun Reaille
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Sourc: {fileID: 0}
+  - Clip: {fileID: 8300000, guid: 86d728986a93fdf44aee504ca6c4ecaa, type: 3}
+    Name: Pistol Fire
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Sourc: {fileID: 0}
+  - Clip: {fileID: 8300000, guid: 00a79ba45a825834d8aaf59f5f47f649, type: 3}
+    Name: Uzi Fire
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Sourc: {fileID: 0}
+  - Clip: {fileID: 8300000, guid: e818e01ebafdbb243a6d7f65c449fdf0, type: 3}
+    Name: Shotgun Fire
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Sourc: {fileID: 0}
+  - Clip: {fileID: 8300000, guid: ca4d611c6698d1243baddf0a27542b1d, type: 3}
+    Name: Machin Gun Fire
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Sourc: {fileID: 0}
+  - Clip: {fileID: 8300000, guid: 5ef9578012d63c7439814566adb776ba, type: 3}
+    Name: Hart  Pick Up
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Sourc: {fileID: 0}
+  - Clip: {fileID: 8300000, guid: 39e3f66088f87ac4daa0bc0bcc7ade76, type: 3}
+    Name: Zombie Hurt
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Sourc: {fileID: 0}
+  - Clip: {fileID: 8300000, guid: 2d330533bd9f49646bc265dd2d49719c, type: 3}
+    Name: Zombie Attack
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Sourc: {fileID: 0}
+  - Clip: {fileID: 8300000, guid: cabeb89b4e96f2c468e908b959c27723, type: 3}
+    Name: Zombie Dead
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    Sourc: {fileID: 0}
+  - Clip: {fileID: 8300000, guid: 3a6e0b69fecb75f428c5d30af87eaee1, type: 3}
+    Name: Breath
+    Volume: 1
+    Pitch: 1
+    Loop: 1
+    Sourc: {fileID: 0}
