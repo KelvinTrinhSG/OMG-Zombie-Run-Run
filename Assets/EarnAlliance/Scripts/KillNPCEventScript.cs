@@ -25,10 +25,10 @@ public class KillNPCEventScript : MonoBehaviour
         timestampforSendKillNPCEvent = timestampforGenerateSignature.ToString();
         timestampforEvents = DateTimeOffset.FromUnixTimeMilliseconds(timestampforGenerateSignature).DateTime.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ss.fffZ");
         //Debug.Log(IdentifierUser.Ins.UserId);
-        SendKillNPCEvent("Silver_123", IdentifierUser.Ins.UserId, new Traits { zombiekilled = 20, type = "ZOMBIE" });
+        SendKillNPCEvent("Silver_123", IdentifierUser.Ins.UserId,20, new Traits { zombiekilled = 20, type = "ZOMBIE" });
     }
 
-    private void SendKillNPCEvent(string groupId, string userId, Traits traits)
+    private void SendKillNPCEvent(string groupId, string userId, int value, Traits traits)
     {
         KillNPCEvent killNPCEvent = new KillNPCEvent
         {
@@ -39,6 +39,7 @@ public class KillNPCEventScript : MonoBehaviour
                 {
                     groupId = groupId,
                     userId = userId,
+                    value = value,
                     eventName = "KILL_NPC",                   
                     Traits = traits,
                     time = timestampforEvents
@@ -83,6 +84,7 @@ public class KillNPCEventScript : MonoBehaviour
             else
             {
                 Debug.Log("killNPC Event sent successfully!");
+                Debug.Log(jsonPayload);
             }
         }
     }
@@ -97,6 +99,7 @@ public class KillNPCEventScript : MonoBehaviour
     {
         public string groupId { get; set; }
         public string userId { get; set; }
+        public int value { get; set; }
 
         [JsonProperty("event")]
         public string eventName { get; set; }
