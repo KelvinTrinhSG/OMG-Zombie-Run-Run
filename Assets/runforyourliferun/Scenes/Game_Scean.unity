@@ -1666,6 +1666,85 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f5a29535f781d247b80941f43690885, type: 3}
+--- !u!1 &366819402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 366819403}
+  - component: {fileID: 366819405}
+  - component: {fileID: 366819404}
+  m_Layer: 5
+  m_Name: EarnAllianceQuest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &366819403
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366819402}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7848810702899319461}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 417}
+  m_SizeDelta: {x: 1000, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &366819404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366819402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: You completed Earn Alliance Quest!
+--- !u!222 &366819405
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366819402}
+  m_CullTransparentMesh: 1
 --- !u!4 &371279519 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5827054929291625999, guid: 6f5a29535f781d247b80941f43690885, type: 3}
@@ -5371,6 +5450,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5827054929291625999, guid: 6f5a29535f781d247b80941f43690885, type: 3}
   m_PrefabInstance: {fileID: 158125328}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &992172633
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 992172635}
+  - component: {fileID: 992172634}
+  m_Layer: 0
+  m_Name: KillNPCEventObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &992172634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992172633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f208eeb6b9bfb27479a8cd5e85144445, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  earnAllianceApiUrl: https://events.earnalliance.com/v2
+  clientId: ebf312f6-6133-431f-8405-529b1376d074
+  clientSecret: SGdYwTan1ha6gkvUbhmpQOyMC6QLGOvm
+--- !u!4 &992172635
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992172633}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 976.93286, y: 532.16504, z: -8.407619}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &995737675
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11374,6 +11500,18 @@ PrefabInstance:
       propertyPath: Dead_Zombie_Text
       value: 
       objectReference: {fileID: 1839163811}
+    - target: {fileID: 1058514934442718938, guid: 3150b2c3c102c3c4c91f25a0d48053d4, type: 3}
+      propertyPath: EarnAllianceQuest
+      value: 
+      objectReference: {fileID: 366819402}
+    - target: {fileID: 1058514934442718938, guid: 3150b2c3c102c3c4c91f25a0d48053d4, type: 3}
+      propertyPath: killNPCEventObject
+      value: 
+      objectReference: {fileID: 992172633}
+    - target: {fileID: 1058514934442718938, guid: 3150b2c3c102c3c4c91f25a0d48053d4, type: 3}
+      propertyPath: killNPCEventScript
+      value: 
+      objectReference: {fileID: 992172634}
     - target: {fileID: 1058514934442718939, guid: 3150b2c3c102c3c4c91f25a0d48053d4, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -11566,7 +11704,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 139893970230278214, guid: 0fd75e11c284b6c4680e9a7f2c9efc85, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1839793130489211572, guid: 0fd75e11c284b6c4680e9a7f2c9efc85, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11727,6 +11865,10 @@ PrefabInstance:
     - target: {fileID: 7848810701389232642, guid: 0fd75e11c284b6c4680e9a7f2c9efc85, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7848810701389232642, guid: 0fd75e11c284b6c4680e9a7f2c9efc85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7848810701389232646, guid: 0fd75e11c284b6c4680e9a7f2c9efc85, type: 3}
       propertyPath: m_Camera
@@ -11991,6 +12133,9 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 7848810701389232641, guid: 0fd75e11c284b6c4680e9a7f2c9efc85, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 366819403}
     - targetCorrespondingSourceObject: {fileID: 1018630619758301304, guid: 0fd75e11c284b6c4680e9a7f2c9efc85, type: 3}
       insertIndex: 1
       addedObject: {fileID: 1634729743}
@@ -12005,6 +12150,11 @@ PrefabInstance:
 --- !u!224 &7848810702899319460 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3552281516529805030, guid: 0fd75e11c284b6c4680e9a7f2c9efc85, type: 3}
+  m_PrefabInstance: {fileID: 7848810702899319459}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &7848810702899319461 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7848810701389232641, guid: 0fd75e11c284b6c4680e9a7f2c9efc85, type: 3}
   m_PrefabInstance: {fileID: 7848810702899319459}
   m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
@@ -12023,3 +12173,4 @@ SceneRoots:
   - {fileID: 4432979649404175534}
   - {fileID: 590748502791423487}
   - {fileID: 13460825}
+  - {fileID: 992172635}

@@ -14,6 +14,9 @@ public class Game_Manger : MonoBehaviour
     [HideInInspector] public float _player_Speed;
     [HideInInspector] public bool Stop_Meters;
 
+    public KillNPCEventScript killNPCEventScript;
+    public GameObject EarnAllianceQuest;
+
     public bool Its_Mobile_Game;    
     public Text Meters_Text;
     public Text Meters10_Text;
@@ -60,6 +63,9 @@ public class Game_Manger : MonoBehaviour
         Text_H_Playes = Texts_Holder.GetComponent<RectTransform>().anchoredPosition;
         _player_Speed = Player_Speed;
         Stop_Meters = true;
+        EarnAllianceQuest.SetActive(false);
+        //Debug.Log(IdentifierUser.Ins.UserId);
+
     }
 
     
@@ -401,6 +407,18 @@ public class Game_Manger : MonoBehaviour
     public void Add_Dead_Zombie ()
     {
         Dead_Zombie++;
+        Debug.Log(Dead_Zombie);
+        if (Dead_Zombie == 20) {//20
+            if (killNPCEventScript != null)
+            {
+                EarnAllianceQuest.SetActive(true);
+                killNPCEventScript.SendKillNPCEventToEarnAlliance();                
+            }
+        }
+        if (Dead_Zombie >= 24)
+        {//24
+            EarnAllianceQuest.SetActive(false);
+        }
     }
     public void Dist_Calculator ()
     {

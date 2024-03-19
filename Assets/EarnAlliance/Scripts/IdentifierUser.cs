@@ -6,7 +6,7 @@ using System.Security.Cryptography;
 using System.Text;
 using UnityEngine.UI;
 
-public class IdentifierUser : MonoBehaviour
+public class IdentifierUser : Singleton<IdentifierUser>
 {
     public string earnAllianceApiUrl = "https://events.earnalliance.com/v2";
     public string clientId = "ebf312f6-6133-431f-8405-529b1376d074";
@@ -37,7 +37,11 @@ public class IdentifierUser : MonoBehaviour
     public InputField inputFieldDiscord;
     public InputField inputFieldEmail;
 
-    private void Start()
+    public override void Awake()
+    {
+        MakeSingleton(true);
+    }
+    public override void Start()
     {
         inputFieldUserId.onEndEdit.AddListener(delegate { OnInputEndEdit(inputFieldUserId, "UserId"); });
         inputFieldCustomUser.onEndEdit.AddListener(delegate { OnInputEndEdit(inputFieldCustomUser, "CustomUser");});
@@ -168,6 +172,7 @@ public class IdentifierUser : MonoBehaviour
             else
             {
                 Debug.Log("Custom event sent successfully!");
+                //Debug.Log(UserId);
             }
         }
     }
